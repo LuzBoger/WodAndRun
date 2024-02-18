@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My ApplicationWodAndRun</string>
+    <string name="par_ici">PAR ICI</string>
+    <string name="cross_fit">CROSS-FIT</string>
+    <string name="par_ici2">PAR ICI</string>
+    <string name="run">RUN</string>
+    <string name="wod_and_run">WOD &amp; RUN</string>
 </resources>

@@ -4,24 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <include layout="@layout/navbar_reusable" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageCrossFit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/crossfit_image2"
+            app:shapeAppearanceOverlay="@style/roundedCorner" />
+
+        <Button
+            android:id="@+id/buttonWod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:text="@string/par_ici" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/cross_fit"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
-        <ImageView
-            android:id="@+id/imageView"
-            android:scaleType="fitCenter"
+        android:padding="16dp"
+        app:cardCornerRadius="12dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageRun"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            app:srcCompat="@drawable/crossfit_image"
-            />
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/run"
+            app:shapeAppearanceOverlay="@style/roundedCorner" />
+
         <Button
+            android:id="@+id/buttonRun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PAR ICI"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/par_ici2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/run"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
     </FrameLayout>
+
 </LinearLayout>
