@@ -28,5 +28,33 @@
         android:layout_height="100dp"
         android:layout_gravity="center" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <!-- Premier élément -->
+        <EditText
+            android:id="@+id/inputExercice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:hint="Entrer votre PR"
+            android:text=""
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+        <!-- Deuxième élément -->
+        <Button
+            android:id="@+id/ButtonValidate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="Modifier" />
+        <!-- Ajoutez d'autres éléments ici -->
+
+    </LinearLayout>
+
 
 </LinearLayout>
